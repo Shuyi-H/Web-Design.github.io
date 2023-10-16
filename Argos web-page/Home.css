@@ -8,12 +8,13 @@
   
   html {
     scroll-behavior: smooth;
-    width: 100%;
   }
-
-@media (max-width: 768px) {
-  
+body {
+    width: 100%;
+    max-width: 100%;
 }
+
+
 /* --------------------------------------------- Header and Nav Bar---------------------------------------------*/
   #header {
       display: flex;
