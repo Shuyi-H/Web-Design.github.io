@@ -9,7 +9,10 @@
   html {
     scroll-behavior: smooth;
   }
+
+@media (max-width: 768px) {
   
+}
 /* --------------------------------------------- Header and Nav Bar---------------------------------------------*/
   #header {
       display: flex;
