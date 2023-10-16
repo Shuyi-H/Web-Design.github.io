@@ -1,10 +1,9 @@
 /*原始的网页样式*/ 
 .body {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  min-height: 10vh;
 }
 /*当屏幕宽度小于等于991px时，一般多为手机*/ 
 /*className为container的元素宽度为100%*/
