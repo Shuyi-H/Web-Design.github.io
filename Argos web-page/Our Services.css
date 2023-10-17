@@ -6,14 +6,11 @@
 }
 
 
-body{
-  height: 100vh;
-  width: 100%;
-  max-width: 100%;
-  min-height: 10vh;
+
 }
 /*------------------------------------------------ Header and Nav Bar ------------------------------------------*/
 #header {
+	overflow-x: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
