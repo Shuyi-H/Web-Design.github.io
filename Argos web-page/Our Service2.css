@@ -1,3 +1,14 @@
+/* 初始样式适用于小屏幕 */
+body {
+    font-size: 16px;
+}
+
+/* 在媒体查询中添加更大屏幕的样式 */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
 /* 适应小屏幕（移动设备） */
 @media (max-width: 767px) {
     body {
