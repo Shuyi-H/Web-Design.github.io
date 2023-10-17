@@ -3,6 +3,12 @@ body {
     font-size: 16px;
 }
 
+@media screen and (max-width: 768px) {
+    #header a img {
+        width: 80%; /* 设置 logo 在小屏幕上的宽度 */
+    }
+}
+
 /* 在媒体查询中添加更大屏幕的样式 */
 @media (min-width: 768px) {
     body {
