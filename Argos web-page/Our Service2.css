@@ -1,1 +1,28 @@
+/* 初始样式适用于小屏幕 */
+body {
+    font-size: 16px;
+}
+
+
+#header {
+    padding: 10px; /* 缩小 padding */
+}
+
+#navbar li a {
+    font-size: 1rem; /* 使
+    padding: 0 10px; /* 减小左右内边距 */
+}
+
+.welc {
+    font-size: 1.5rem; /* 相对于根元素字体大小，相当于 24px */
+    padding: 20px;
+}
+
+.service h1 {
+    font-size: 1.75rem; /* 相对于根元素字体大小，相当于 28px */
+}
+
+.service p {
+    font-size: 1rem; /* 相对于根元素字体大小，相当于 16px */
+}
 
