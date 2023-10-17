@@ -25,7 +25,7 @@ body {
 }
 
 /* 在媒体查询中添加更大屏幕的样式 */
-@media (min-width: 740px) {
+@media (min-width: 768px) {
     body {
         font-size: 18px;
     }
