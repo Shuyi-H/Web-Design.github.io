@@ -1,29 +1,33 @@
-/*原始的网页样式*/ 
-.body {
-  height: 100vh;
-  width: 100%;
-  max-width: 100%;
-  min-height: 10vh;
-}
-/*当屏幕宽度小于等于991px时，一般多为手机*/ 
-/*className为container的元素宽度为100%*/
-@media (max-width: 991px) {
-    .body {
-        width: 100% 
+/* 适应小屏幕（移动设备） */
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    .welc {
+        font-size: 24px;
+        padding: 20px;
+    }
+    .service h1 {
+        font-size: 24px;
+    }
+    .service p {
+        font-size: 16px;
     }
 }
-/*当屏幕宽度大于等于992px且小于等于1099px时，一般多为平板*/
-/*className为container的元素宽度为90%*/
-@media (min-width: 992px) and (max-width: 1099px) {
-    .body {
-        width: 90%
+
+/* 适应中等屏幕（平板设备） */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 18px;
     }
-} 
-/*当屏幕宽度大于等于1100px时，常规电脑*/
-/*className为container的元素宽度为1100px*/
-/*此处用于举例，实际这个样式是多余了，默认就是>1100px*/
-@media (min-width: 1100px) {
-    .body {
-        width: 1100px
+    .welc {
+        font-size: 28px;
+        padding: 40px;
+    }
+    .service h1 {
+        font-size: 28px;
+    }
+    .service p {
+        font-size: 18px;
     }
 }
