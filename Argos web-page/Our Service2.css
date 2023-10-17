@@ -8,7 +8,8 @@ body {
 }
 
 #navbar li a {
-    font-size: 1.1rem; /* 
+    font-size: 1rem; /* 使
+    padding: 0 10px; /* 减小左右内边距 */
 }
 
 .welc {
@@ -49,6 +50,12 @@ body {
 
     .service p {
         font-size: 1.1rem; /* 调整字体大小，相当于 17.6px */
+    }
+}
+
+@media (max-width: 600px) {
+    #navbar li a {
+        font-size: 1.2rem; /* 缩小字体大小，相对于根元素字体大小，相当于 19.2px */
     }
 }
 
