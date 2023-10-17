@@ -22,10 +22,10 @@
 	top: 0;
 	left:  0;
 }
-.wrap{
+/*.wrap{
 	overflow-x: hidden;
 }
-
+*/
 #navbar {
 	display: none;
 	align-items: center;
