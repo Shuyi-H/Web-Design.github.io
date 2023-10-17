@@ -27,6 +27,33 @@ body {
         font-size: 16px;
     }
 }
+/* 适应小屏幕（移动设备） */
+@media (max-width: 767px) {
+    #header {
+        display: flex;
+        flex-direction: column; /* 将 Logo 和导航纵向排列 */
+        align-items: center; /* 居中对齐 */
+        padding: 20px; /* 调整导航栏的内边距 */
+    }
+
+    #logo {
+        order: 2; /* 调整 Logo 的显示顺序，将其放在导航下面 */
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column; /* 垂直排列导航项 */
+        text-align: center; /* 文本居中对齐 */
+    }
+
+    #navbar li {
+        margin: 10px 0; /* 调整导航项之间的间距 */
+    }
+
+    #navbar li a {
+        font-size: 20px; /* 调整字号 */
+    }
+}
 
 /* 适应中等屏幕（平板设备） */
 @media (min-width: 768px) and (max-width: 991px) {
