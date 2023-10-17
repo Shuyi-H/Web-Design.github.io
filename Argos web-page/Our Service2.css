@@ -3,55 +3,59 @@ body {
     font-size: 16px;
 }
 
+#header {
+    padding: 20px 10px; /* 缩小 padding */
+}
 
+#navbar li a {
+    font-size: 1.4rem; /* 使用 rem 单位，相对于根元素字体大小，相当于 22.4px */
+}
+
+.welc {
+    font-size: 1.5rem; /* 相对于根元素字体大小，相当于 24px */
+    padding: 20px;
+}
+
+.service h1 {
+    font-size: 1.75rem; /* 相对于根元素字体大小，相当于 28px */
+}
+
+.service p {
+    font-size: 1rem; /* 相对于根元素字体大小，相当于 16px */
+}
 
 /* 在媒体查询中添加更大屏幕的样式 */
 @media (min-width: 768px) {
     body {
         font-size: 18px;
     }
-}
-/* 适应小屏幕（移动设备） */
-@media (max-width: 767px) {
-    body {
-        font-size: 16px;
-    }
-    .welc {
-        font-size: 24px;
-        padding: 20px;
-    }
-    .service h1 {
-        font-size: 24px;
-    }
-    .service p {
-        font-size: 16px;
-    }
-}
-/* 适应小屏幕（移动设备） */
-@media (max-width: 767px) {
+
     #header {
-        display: flex;
-        flex-direction: column; /* 将 Logo 和导航纵向排列 */
-        align-items: center; /* 居中对齐 */
-        padding: 20px; /* 调整导航栏的内边距 */
-    }
-
-    #logo {
-        order: 2; /* 调整 Logo 的显示顺序，将其放在导航下面 */
-    }
-
-    #navbar {
-        display: flex;
-        flex-direction: column; /* 垂直排列导航项 */
-        text-align: center; /* 文本居中对齐 */
-    }
-
-    #navbar li {
-        margin: 10px 0; /* 调整导航项之间的间距 */
+        padding: 20px 80px; /* 恢复默认的 padding */
     }
 
     #navbar li a {
-        font-size: 20px; /* 调整字号 */
+        font-size: 1.6rem; /* 调整字体大小，相当于 25.6px */
+    }
+
+    .welc {
+        font-size: 1.75rem; /* 调整字体大小，相当于 28px */
+        padding: 40px; /* 增加 padding */
+    }
+
+    .service h1 {
+        font-size: 1.8rem; /* 调整字体大小，相当于 28.8px */
+    }
+
+    .service p {
+        font-size: 1.1rem; /* 调整字体大小，相当于 17.6px */
+    }
+}
+
+/* 在更大的屏幕尺寸下添加其他样式调整 */
+@media (min-width: 1200px) {
+    #header {
+        padding: 20px 120px; /* 进一步增加 padding */
     }
 }
 
