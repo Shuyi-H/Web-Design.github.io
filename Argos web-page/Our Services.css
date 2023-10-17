@@ -27,9 +27,20 @@ body{
 }
 
 #navbar {
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
+}
+
+
+/* 在小屏幕上显示菜单按钮 */
+.menu-button {
+    display: block;
+}
+
+/* 当按钮被点击时，显示导航菜单 */
+#navbar.active {
+    display: block;
 }
 
 #navbar li {
