@@ -66,25 +66,7 @@ body{
 	left: 20px;
 }
 
-/* 小屏幕（手机）样式 */
-@media screen and (max-width: 768px) {
-  /* 修改导航栏样式，以适应小屏幕 */
-  #header {
-    padding: 10px 20px;
-  }
 
-  #navbar {
-    flex-direction: row; /* 横向排列导航项 */
-    justify-content: space-around; /* 均匀分布导航项 */
-  }
-
-  #navbar li {
-    padding: 0 10px; /* 调整导航项的间距 */
-  }
-
-  #navbar li a {
-    font-size: 20px;
-  }
 
 
 /*<!------------------------------------------------ End of Header and Nav Bar ------------------------------------------->*/
