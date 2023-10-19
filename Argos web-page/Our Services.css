@@ -252,6 +252,8 @@ footer {
   .wrapper .footer-widget .logo {
     margin-bottom: 20px;
     /*vertical-align: middle;*/
+    align-items: center;
+    justify-content: center;
   }
   
   .wrapper .footer-widget p {
