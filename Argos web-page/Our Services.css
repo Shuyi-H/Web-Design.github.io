@@ -239,8 +239,8 @@ footer {
   }
   
   .wrapper .footer-widget {
-    width: calc(20% - 30px);
-    margin: 0 15px 50px;
+    width: calc(15% - 20px);
+    margin: 0 10px 30px;
     padding: 0 12px;
   }
   
@@ -367,15 +367,6 @@ footer {
     margin: 15px 0;
 }
 
-/* Center-align social icons in Footer */
-.wrapper .footer-widget .socials {
-    justify-content: center;
-}
-
-/* Center-align links in Footer */
-.wrapper .footer-widget .links {
-    text-align: center;
-}
 
 @media screen and (max-width: 768px) {
     .content-container {
