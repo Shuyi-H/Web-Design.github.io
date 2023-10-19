@@ -66,6 +66,15 @@ body{
 	left: 20px;
 }
 
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navbar li {
+    flex: 1;
+}
 
 
 
