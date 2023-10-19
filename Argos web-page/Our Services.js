@@ -22,4 +22,12 @@ $(document).ready(function() {
       textElement.slideToggle();
     });
   });
-  
+
+ $(document).ready(function() {
+    if ($(window).width() <= 768) {
+        // 当屏幕宽度小于等于768px时，将导航项横向排列
+        $('#navbar').css('flex-direction', 'row');
+        $('#navbar li').css('padding', '0 10px');
+        $('#navbar li a').css('font-size', '20px');
+    }
+});
