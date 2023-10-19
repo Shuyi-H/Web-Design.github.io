@@ -347,7 +347,7 @@ footer {
 
 .container {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -380,6 +380,8 @@ footer {
     footer {
         align-items: center; /* 仅在小屏幕上居中Footer */
     }
+     .wrapper .footer-widget{
+	align-items: center;     
 }
 
   /*<!------------------------------------------------/* End of Footer Part ------------------------------------------->*/
