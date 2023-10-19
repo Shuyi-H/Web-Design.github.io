@@ -228,13 +228,13 @@ footer {
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
-    padding: 0 12px;
+    padding: 0 8px;
   }
   
   .wrapper {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    
     flex-wrap: wrap;
   }
   
@@ -250,14 +250,14 @@ footer {
   }
   
   .wrapper .footer-widget .logo {
-    margin-bottom: 30px;
-    vertical-align: middle;
+    margin-bottom: 20px;
+    /*vertical-align: middle;*/
   }
   
   .wrapper .footer-widget p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 17px;
-    line-height: 24px;
+    line-height: 20px;
   }
   
   .wrapper .footer-widget .socials {
