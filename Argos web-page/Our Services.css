@@ -66,6 +66,7 @@ body{
 	left: 20px;
 }
 
+/* 小屏幕（手机）样式 */
 @media screen and (max-width: 768px) {
   /* 修改导航栏样式，以适应小屏幕 */
   #header {
@@ -73,24 +74,19 @@ body{
   }
 
   #navbar {
-    flex-direction: row; /* 垂直排列导航项 */
+    flex-direction: row; /* 横向排列导航项 */
+    justify-content: space-around; /* 均匀分布导航项 */
   }
 
   #navbar li {
-    padding: 10px 0; /* 调整导航项的间距 */
+    padding: 0 10px; /* 调整导航项的间距 */
   }
 
   #navbar li a {
     font-size: 20px;
   }
 
-  /* 你可以继续添加其他小屏幕样式 */
-}
 
-/* 大屏幕（电脑）样式 */
-@media screen and (min-width: 769px) {
-  /* 这里可以定义大屏幕下的样式 */
-}
 /*<!------------------------------------------------ End of Header and Nav Bar ------------------------------------------->*/
 /*     <!------------------------------------------- experience info ------------------------------------------->*/
 .construction {
