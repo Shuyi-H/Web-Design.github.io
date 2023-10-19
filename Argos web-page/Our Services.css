@@ -334,4 +334,42 @@ footer {
   .copyright p a:hover {
     color: #cfa45a;
   }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Adjust Footer styles */
+footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.wrapper {
+    flex-direction: column;
+    text-align: center;
+}
+
+.wrapper .footer-widget {
+    width: 100%;
+    margin: 15px 0;
+}
+
+/* Center-align social icons in Footer */
+.wrapper .footer-widget .socials {
+    justify-content: center;
+}
+
+/* Center-align links in Footer */
+.wrapper .footer-widget .links {
+    text-align: center;
+}
+
   /*<!------------------------------------------------/* End of Footer Part ------------------------------------------->*/
