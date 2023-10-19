@@ -73,7 +73,7 @@ body{
   }
 
   #navbar {
-    flex-direction: column; /* 垂直排列导航项 */
+    flex-direction: row; /* 垂直排列导航项 */
   }
 
   #navbar li {
