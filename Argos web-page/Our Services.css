@@ -111,6 +111,8 @@ body{
 .construction {
   text-align: center;
   background-color: rgb(205, 253, 253);
+  display: flex;
+  flex-direction: column;
 }
 
 .welc {
@@ -216,7 +218,10 @@ footer {
     height: auto;
     padding-top: 40px;
     background-color: #ffffff;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .container {
@@ -338,7 +343,7 @@ footer {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
