@@ -264,8 +264,10 @@ footer {
   
   .wrapper .footer-widget .socials {
     display: flex;
-    align-items: center;
+    
     justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
   }
   
   .wrapper .footer-widget .socials li {
