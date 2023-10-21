@@ -87,7 +87,7 @@ body{
 
 @media screen and (max-width: 768px) {
     #header {
-        padding: 15px ; /* Adjust padding for small screens */
+        padding: 10px ; /* Adjust padding for small screens */
     }
 
     #navbar {
@@ -96,11 +96,11 @@ body{
 
     #navbar li {
         text-align: center; /* Center-align navigation items */
-        padding: 10px 0; /* Adjust padding for small screens */
+        padding: 6px 0; /* Adjust padding for small screens */
     }
 
     #navbar li a {
-        font-size: 2rem; /* Reduce font size for small screens */
+        font-size: 1.25rem; /* Reduce font size for small screens */
     }
 }
 
