@@ -94,10 +94,11 @@ body{
     #navbar li {
         text-align: center; /* Center-align navigation items */
         padding: 6px 0; /* Adjust padding for small screens */
+	width: 100%
     }
 
     #navbar li a {
-        font-size: 1rem; /* Reduce font size for small screens */
+        font-size: 14px;
     }
 }
 
