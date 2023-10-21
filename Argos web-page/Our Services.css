@@ -386,7 +386,9 @@ footer {
      .wrapper .footer-widget{
 	align-items: center;
         justify-content: center; 
-	margin: 15px 0;
+	
+	width: calc(20% - 10px); /* Set a consistent width for all footer-widget elements */
+        margin: 0 5px; 
 }
 
   /*<!------------------------------------------------/* End of Footer Part ------------------------------------------->*/
