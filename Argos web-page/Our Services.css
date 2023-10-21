@@ -214,62 +214,51 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    padding-top: 20px 0;
+    padding-top: 40px;
     background-color: #ffffff;
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
+
   }
   
   .container {
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
-    padding: 0 8px;
+    padding: 0 12px;
   }
   
   .wrapper {
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    flex-direction: row;
     flex-wrap: wrap;
   }
   
   .wrapper .footer-widget {
-    
+    width: calc(20% - 30px);
+    margin: 0 15px 50px;
     padding: 0 12px;
-    align-items: center;
-    justify-content: center;
-    width: calc(20% - 10px); /* Set a consistent width for all footer-widget elements */
-    margin: 0 5px; 
   }
   
-  /*.wrapper .footer-widget:nth-child(1) {
+  .wrapper .footer-widget:nth-child(1) {
     width: calc(40% - 50px);
     margin-right: 15px;
   }
-
   
   .wrapper .footer-widget .logo {
-    margin-bottom: 20px;
-    /*vertical-align: middle;*/
-    align-items: center;
-    justify-content: center;
-  }*/
+    margin-bottom: 30px;
+    vertical-align: middle;
+  }
   
   .wrapper .footer-widget p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 17px;
-    line-height: 20px;
+    line-height: 24px;
   }
   
   .wrapper .footer-widget .socials {
     display: flex;
-    
-    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
   
   .wrapper .footer-widget .socials li {
@@ -277,13 +266,13 @@ footer {
   }
   
   .wrapper .footer-widget .socials li a {
-    width: 30px;
-    height: 30px;
+    width: 44px;
+    height: 44px;
     margin-right: 10px;
     color: #ffffff;
     background-color: rgba(183, 153, 108, 0.642);
     border-radius: 50%;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -336,7 +325,7 @@ footer {
   
   .copyright p a {
     color: #6b34d2;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease-out;
@@ -345,33 +334,7 @@ footer {
   .copyright p a:hover {
     color: #cfa45a;
   }
-
-
-.container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    min-height: 100vh;
-}
-
-/* Adjust Footer styles */
-footer {
-    background-color: #ffffff;
-    padding: 20px 0;
-}
-
-.wrapper {
-   
-    text-align: center;
-}
-
-.wrapper .footer-widget {
-    width: 100%;
-    margin: 0 auto;
-}
+  /*<!------------------------------------------------/* End of Footer Part ------------------------------------------->*/
 
 
 @media screen and (max-width: 768px) {
