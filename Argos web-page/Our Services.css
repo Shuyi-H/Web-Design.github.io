@@ -9,6 +9,7 @@ body{
   height: 100vh;
   width: 100%;
   min-height: 10vh;
+  margin: 0;
 }
 
 
@@ -18,19 +19,21 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 80px;
+	padding: 20px 10px;
 	background: #ffffffbf;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 	z-index: 999;
 	position: sticky;
 	top: 0;
-	left:  0;
+	left: 0;
 }
 
 #navbar {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 
@@ -38,13 +41,15 @@ body{
 
 #navbar li {
 	list-style: none;
-	padding: 0 20px;
+	padding: 0 10px;
 	position: relative;
+	flex: 1;
+	width: 20%;
 }
 
 #navbar li a {
 	text-decoration: none;
-	font-size: 22px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #1a1a1a;
 	transition: 0.3s ease;
@@ -66,19 +71,11 @@ body{
 	left: 20px;
 }
 
-#navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-#navbar li {
-    flex: 1;
-}
 
-#navbar li {
-    width: 20%; /* 如果有5个导航项，每个导航项占据屏幕宽度的20% */
-}
+
+
+
 @media screen and (max-width: 768px) {
     #navbar li {
         width: 100%; /* 在小屏幕上，导航项占据整个屏幕宽度 */
@@ -100,7 +97,7 @@ body{
     }
 
     #navbar li a {
-        font-size: 1.25rem; /* Reduce font size for small screens */
+        font-size: 1rem; /* Reduce font size for small screens */
     }
 }
 
@@ -216,7 +213,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    padding-top: 40px;
+    padding-top: 20px 0;
     background-color: #ffffff;
     display: flex;
     
@@ -234,13 +231,13 @@ footer {
   .wrapper {
     display: flex;
     justify-content: space-between;
-    
+    text-align: center;
     flex-wrap: wrap;
   }
   
   .wrapper .footer-widget {
-    width: calc(15% - 20px);
-    margin: 0 10px 30px;
+    width: 100%;
+    margin: 15px 0;
     padding: 0 12px;
     align-items: center;
     justify-content: center;
@@ -277,13 +274,13 @@ footer {
   }
   
   .wrapper .footer-widget .socials li a {
-    width: 44px;
-    height: 44px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
     color: #ffffff;
     background-color: rgba(183, 153, 108, 0.642);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -336,7 +333,7 @@ footer {
   
   .copyright p a {
     color: #6b34d2;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease-out;
@@ -384,7 +381,8 @@ footer {
     }
      .wrapper .footer-widget{
 	align-items: center;
-        justify-content: center;   
+        justify-content: center; 
+	margin: 15px 0;
 }
 
   /*<!------------------------------------------------/* End of Footer Part ------------------------------------------->*/
