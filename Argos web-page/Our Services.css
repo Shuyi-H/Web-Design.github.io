@@ -231,7 +231,8 @@ footer {
   .wrapper {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column; /* 垂直排列内容 */
+    align-items: center; 
     flex-wrap: wrap;
   }
   
