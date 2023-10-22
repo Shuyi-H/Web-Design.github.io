@@ -281,6 +281,7 @@ footer {
     #header {
         flex-direction: column; /* 垂直排列 */
         align-items: center;
+	text-align: center;
         padding: 10px; /* 减小上下内边距 */
 	
     }
@@ -345,6 +346,7 @@ footer {
  .footer-widget .links li {
         display: inline; /* 让<li>水平排列 */
         margin-right: 10px; /* 调整<li>之间的间距 */
+	white-space: nowrap; /* 防止单词换行 */
     }
 
    .copyright {
