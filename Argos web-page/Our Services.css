@@ -287,6 +287,7 @@ footer {
     #navbar {
         flex-direction: column; /* 垂直排列 */
         text-align: center;
+	margin: 0 10;
     }
 
     #navbar li {
