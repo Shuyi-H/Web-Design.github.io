@@ -282,20 +282,18 @@ footer {
         flex-direction: column; /* 垂直排列 */
         align-items: center;
         padding: 10px; /* 减小上下内边距 */
-	margin-left: 10px;
-	margin-right: 10px;
+	
     }
 
     #navbar {
         flex-direction: column; /* 垂直排列 */
         text-align: center;
-	margin-left: 10px;
-	margin-right: 10px;
+	padding-left: 10px;
     }
 
     #navbar li {
-        margin: 8px; /* 调整导航项之间的间距 */
-	font-size: 16px;
+        margin: 8px 0; /* 调整导航项之间的间距 */
+	font-size: 14px;
     }
 
     .construction .welc {
@@ -317,6 +315,7 @@ footer {
     }
 
    footer {
+	align-items: center;
         text-align: center; /* 文本居中 */
     }
     
