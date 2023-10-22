@@ -282,6 +282,8 @@ footer {
         flex-direction: column; /* 垂直排列 */
         align-items: center;
         padding: 10px; /* 减小上下内边距 */
+	margin-left: 10px;
+	margin-right: 10px;
     }
 
     #navbar {
@@ -292,7 +294,7 @@ footer {
     }
 
     #navbar li {
-        margin: 10px 0; /* 调整导航项之间的间距 */
+        margin: 7px 0; /* 调整导航项之间的间距 */
 	font-size: 16px;
     }
 
