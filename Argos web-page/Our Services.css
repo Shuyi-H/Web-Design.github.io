@@ -340,6 +340,12 @@ footer {
 
     .footer-widget .logo {
         width: 80px; /* 调整页脚小部件中的标志大小 */
+    }
+
+ .footer-widget .links li {
+        display: inline; /* 让<li>水平排列 */
+        margin-right: 10px; /* 调整<li>之间的间距 */
+    }
 
    .copyright {
         margin-top: 10px;
