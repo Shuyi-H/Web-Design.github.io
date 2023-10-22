@@ -5,52 +5,42 @@
 	font-family: "Cormorant Upright";
 }
 
+
 body{
   height: 100vh;
   width: 100%;
   min-height: 10vh;
-  margin: 0;
 }
-
-
 /*------------------------------------------------ Header and Nav Bar ------------------------------------------*/
 #header {
-	
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 10px;
+	padding: 20px 80px;
 	background: #ffffffbf;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 	z-index: 999;
 	position: sticky;
 	top: 0;
-	left: 0;
+	left:  0;
 }
 
 #navbar {
 	display: flex;
 	align-items: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 }
-
-
-
 
 #navbar li {
 	list-style: none;
-	padding: 0 10px;
+	padding: 0 20px;
 	position: relative;
-	flex: 1;
-	width: 20%;
 }
 
 #navbar li a {
 	text-decoration: none;
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 26px;
+	font-weight: 600;
 	color: #1a1a1a;
 	transition: 0.3s ease;
 }
@@ -72,45 +62,11 @@ body{
 }
 
 
-
-
-
-
-@media screen and (max-width: 768px) {
-    #navbar li {
-        width: 100%; /* 在小屏幕上，导航项占据整个屏幕宽度 */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #header {
-        padding: 10px ; /* Adjust padding for small screens */
-    }
-
-    #navbar {
-        flex-direction: column; /* Change to vertical alignment for small screens */
-    }
-
-    #navbar li {
-        text-align: center; /* Center-align navigation items */
-        padding: 6px 0; /* Adjust padding for small screens */
-	width: 100%
-    }
-
-    #navbar li a {
-        font-size: 14px;
-    }
-}
-
-
-
 /*<!------------------------------------------------ End of Header and Nav Bar ------------------------------------------->*/
 /*     <!------------------------------------------- experience info ------------------------------------------->*/
 .construction {
   text-align: center;
   background-color: rgb(205, 253, 253);
-  display: flex;
-  flex-direction: column;
 }
 
 .welc {
@@ -172,7 +128,7 @@ color: #000;
 
 .service h1{
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 32px;
   text-align: center;
   cursor: pointer;
 }
@@ -186,11 +142,9 @@ color: #000;
   box-shadow: #585978;
   flex: 0 0 calc(33.33% - 80px);
   font-size: 28px;
-  margin-right: 0px;
-  margin-bottom: 20px;
+  margin-right: 80px;
   padding: 15px;
   transition: box-shadow 0.3s;
-  width: 100%;
 }
 
 .service:hover {
@@ -213,147 +167,162 @@ color: #000;
 /*<!------------------------------------------------ Footer Part ------------------------------------------->*/
 
 footer {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding-top: 40px;
-    background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  background-color: #ffffff;
 
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 12px;
-  }
-  
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column; /* 垂直排列内容 */
-    align-items: center; 
-    flex-wrap: wrap;
-  }
-  
-  .wrapper .footer-widget {
-    width: calc(20% - 30px);
-    margin: 0 15px 50px;
-    padding: 0 12px;
-  }
-  
-  .wrapper .footer-widget:nth-child(1) {
-    width: calc(40% - 50px);
-    margin-right: 15px;
-  }
-  
-  .wrapper .footer-widget .logo {
-    margin-bottom: 30px;
-    vertical-align: middle;
-  }
-  
-  .wrapper .footer-widget p {
-    margin-bottom: 30px;
-    font-size: 17px;
-    line-height: 24px;
-  }
-  
-  .wrapper .footer-widget .socials {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .wrapper .footer-widget .socials li {
-    list-style: none;
-  }
-  
-  .wrapper .footer-widget .socials li a {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-    color: #ffffff;
-    background-color: rgba(183, 153, 108, 0.642);
-    border-radius: 50%;
-    font-size: 20px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-out;
-  }
-  
-  .wrapper .footer-widget .socials li a:hover {
-    background-color: #6b34d2;
-  }
-  
-  .wrapper .footer-widget h6 {
-    color: #585978;
-    margin: 10px 0 35px;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  
-  .wrapper .footer-widget .links li {
-    list-style: none;
-  }
-  
-  .wrapper .footer-widget .links li a {
-    color: #585978;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: capitalize;
-    line-height: 32px;
-    transition: all 0.3s ease-out;
-  }
-  
-  .wrapper .footer-widget .links li a:hover {
-    color: #cfa45a;
-  }
-  
-  .copyright {
-    position: absolute;
-    bottom: 0;
-    height: 2.5rem;
-    border-top: 1px solid rgba(88, 89, 120, 0.4);
-    width: 100%
-  }
-  
-  .copyright p {
-    color: rgba(88, 89, 120, 0.6);
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-  }
-  
-  .copyright p a {
-    color: #6b34d2;
-    font-size: 20px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.3s ease-out;
-  }
-  
-  .copyright p a:hover {
-    color: #cfa45a;
-  }
-  /*<!------------------------------------------------/* End of Footer Part ------------------------------------------->*/
+}
 
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wrapper .footer-widget {
+  width: calc(20% - 30px);
+  margin: 0 8px 30px;
+  padding: 0 8px;
+}
+
+.wrapper .footer-widget:nth-child(1) {
+  width: calc(40% - 50px);
+  margin-right: 15px;
+}
+
+.wrapper .footer-widget .logo {
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
+.wrapper .footer-widget p {
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.wrapper .footer-widget .socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wrapper .footer-widget .socials li {
+  list-style: none;
+}
+
+.wrapper .footer-widget .socials li a {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  color: #ffffff;
+  background-color: rgba(183, 153, 108, 0.642);
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .footer-widget .socials li a:hover {
+  background-color: #6b34d2;
+}
+
+.wrapper .footer-widget h6 {
+  color: #585978;
+  margin: 10px 0 35px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wrapper .footer-widget .links li {
+  list-style: none;
+}
+
+.wrapper .footer-widget .links li a {
+  color: #585978;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 32px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .footer-widget .links li a:hover {
+  color: #cfa45a;
+}
+
+.copyright {
+  padding: 20px 0;
+  border-top: 1px solid rgba(88, 89, 120, 0.4);
+}
+
+.copyright p {
+  color: rgba(88, 89, 120, 0.6);
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* 媒体查询，适用于小屏幕，例如手机 */
 @media screen and (max-width: 768px) {
-    .content-container {
-        align-items: center; /* 仅在小屏幕上居中内容部分 */
+    #header {
+        flex-direction: column; /* 垂直排列 */
+        align-items: center;
+        padding: 10px; /* 减小上下内边距 */
     }
 
-    footer {
-        align-items: center; /* 仅在小屏幕上居中Footer */
+    #navbar {
+        flex-direction: column; /* 垂直排列 */
+        text-align: center;
     }
-     .wrapper .footer-widget{
-	align-items: center;
-        justify-content: center; 
-	
-	width: calc(20% - 10px); /* Set a consistent width for all footer-widget elements */
-        margin: 0 5px; 
+
+    #navbar li {
+        margin: 10px 0; /* 调整导航项之间的间距 */
+    }
+
+    .construction .welc {
+        font-size: 24px; /* 减小欢迎消息的文字大小 */
+        padding: 30px; /* 调整内边距 */
+    }
+
+    .content {
+        padding: 20px; /* 调整内容部分的内边距 */
+    }
+
+    .row {
+        margin: 10px; /* 调整行之间的间距 */
+    }
+
+    .service {
+        flex: 0 0 calc(100% - 40px); /* 让服务卡片占满屏幕宽度，调整外边距 */
+        margin: 10px 0;
+    }
+
+    .footer-widget {
+        width: calc(100% - 30px); /* 让页脚小部件占满屏幕宽度，调整外边距 */
+        margin: 10px 0;
+    }
+
+    .footer-widget h6 {
+        margin: 15px 0; /* 调整页脚小部件标题的间距 */
+    }
+
+    .footer-widget .logo {
+        width: 80px; /* 调整页脚小部件中的标志大小 */
+    }
 }
 
   /*<!------------------------------------------------/* End of Footer Part ------------------------------------------->*/
