@@ -292,6 +292,7 @@ footer {
 
     #navbar li {
         margin: 10px 0; /* 调整导航项之间的间距 */
+	font-size: 16px;
     }
 
     .construction .welc {
