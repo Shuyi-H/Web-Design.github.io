@@ -329,7 +329,7 @@ footer {
     }
 
     .footer-widget {
-        width: calc(100% - 30px); /* 让页脚小部件占满屏幕宽度，调整外边距 */
+        
         margin: 10px 0;
 	 width: 100%;
     }
@@ -340,6 +340,9 @@ footer {
 
     .footer-widget .logo {
         width: 80px; /* 调整页脚小部件中的标志大小 */
+
+   .copyright {
+        margin-top: 10px;
     }
 }
 
