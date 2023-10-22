@@ -327,17 +327,23 @@ footer {
     .wrapper {
         flex-direction: column; /* 垂直排列页脚小部件 */
         align-items: center;
+	display: flex;
     }
 
     .footer-widget {
-        
+        display: inline;
+        text-align: center;
+        align-items: center;
         margin: 10px 0;
 	 width: 100%;
     }
 
     .footer-widget h6 {
-        margin: 15px 0; /* 调整页脚小部件标题的间距 */
-	text-align: center;
+        margin: 0; /* 调整页脚小部件标题的间距 */
+    white-space: nowrap; /* 防止单词换行 */
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
     }
 
     .footer-widget .logo {
@@ -349,9 +355,12 @@ footer {
     }
 
  .footer-widget .links li {
-        display: inline; /* 让<li>水平排列 */
-        margin: 0 10px; /* 调整<li>之间的间距 */
-	white-space: nowrap; /* 防止单词换行 */
+        display: flex; /* 使用 Flex 布局 */
+    justify-content: center; /* 水平居中文本 */
+    align-items: center; /* 垂直居中文本 */
+    margin: 0 10px; /* 调整 <li> 之间的间距 */
+    white-space: nowrap; /* 防止单词换行 */
+    text-align: center; /* 水平居中链接文本 */
     }
 
    .copyright {
