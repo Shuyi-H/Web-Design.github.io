@@ -294,7 +294,7 @@ footer {
     }
 
     #navbar li {
-        margin: 7px 0; /* 调整导航项之间的间距 */
+        margin: 8px; /* 调整导航项之间的间距 */
 	font-size: 16px;
     }
 
@@ -316,9 +316,23 @@ footer {
         margin: 10px 0;
     }
 
+   footer {
+        text-align: center; /* 文本居中 */
+    }
+    
+    .container {
+        flex-direction: column; /* 垂直排列内部元素 */
+    }
+
+    .wrapper {
+        flex-direction: column; /* 垂直排列页脚小部件 */
+        align-items: center;
+    }
+
     .footer-widget {
         width: calc(100% - 30px); /* 让页脚小部件占满屏幕宽度，调整外边距 */
         margin: 10px 0;
+	 width: 100%;
     }
 
     .footer-widget h6 {
