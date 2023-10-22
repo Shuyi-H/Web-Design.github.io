@@ -337,15 +337,20 @@ footer {
 
     .footer-widget h6 {
         margin: 15px 0; /* 调整页脚小部件标题的间距 */
+	text-align: center;
     }
 
     .footer-widget .logo {
         width: 80px; /* 调整页脚小部件中的标志大小 */
     }
 
+.footer-widget .links {
+        text-align: center; /* 水平居中对齐li */
+    }
+
  .footer-widget .links li {
         display: inline; /* 让<li>水平排列 */
-        margin-right: 10px; /* 调整<li>之间的间距 */
+        margin: 0 10px; /* 调整<li>之间的间距 */
 	white-space: nowrap; /* 防止单词换行 */
     }
 
