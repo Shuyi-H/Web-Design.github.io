@@ -279,7 +279,7 @@ footer {
     }
 
     #navbar li {
-        margin: 6px 2; /* 调整导航项之间的间距 */
+        margin: 6px 2px; /* 调整导航项之间的间距 */
 	font-size: 12px;
     }
 
