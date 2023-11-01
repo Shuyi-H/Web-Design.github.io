@@ -349,7 +349,7 @@ footer {
 	
 
     .footer-widget h6 {
-    position: relative;
+    
         margin: 0; /* 调整页脚小部件标题的间距 */
     white-space: nowrap; /* 防止单词换行 */
     text-align: center;
