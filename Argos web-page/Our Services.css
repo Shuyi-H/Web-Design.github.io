@@ -298,7 +298,7 @@ footer {
     }
 
     .construction .welc {
-        font-size: 24px; /* 减小欢迎消息的文字大小 */
+        font-size: 18px; /* 减小欢迎消息的文字大小 */
         padding: 30px; /* 调整内边距 */
     }
 
