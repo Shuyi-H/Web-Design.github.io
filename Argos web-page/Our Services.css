@@ -283,6 +283,8 @@ footer {
         align-items: center;
 	text-align: center;
         padding: 10px; /* 减小上下内边距 */
+	margin-left: 2px;
+	margin-right: 2px;
 	
     }
 
