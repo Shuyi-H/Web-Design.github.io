@@ -335,7 +335,7 @@ footer {
     }
 
     .footer-widget {
-	position: relative;
+	
         display: inline;
         text-align: center;
         align-items: center;
@@ -363,6 +363,7 @@ footer {
     }
 
 .footer-widget .links {
+	position: relative;
         text-align: center; /* 水平居中对齐li */
     }
 
