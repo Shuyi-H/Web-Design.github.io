@@ -325,6 +325,7 @@ footer {
     
     .container {
         flex-direction: column; /* 垂直排列内部元素 */
+	align-items: center;
     }
 
     .wrapper {
@@ -334,6 +335,7 @@ footer {
     }
 
     .footer-widget {
+	position: relative;
         display: inline;
         text-align: center;
         align-items: center;
@@ -347,6 +349,7 @@ footer {
 	
 
     .footer-widget h6 {
+    position: absolute;
         margin: 0; /* 调整页脚小部件标题的间距 */
     white-space: nowrap; /* 防止单词换行 */
     text-align: center;
