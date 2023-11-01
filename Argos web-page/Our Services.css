@@ -293,8 +293,8 @@ footer {
     }
 
     #navbar li {
-        margin: 8px 0; /* 调整导航项之间的间距 */
-	font-size: 14px;
+        margin: 6px 2; /* 调整导航项之间的间距 */
+	font-size: 12px;
     }
 
     .construction .welc {
