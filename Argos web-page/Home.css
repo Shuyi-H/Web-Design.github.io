@@ -286,23 +286,16 @@ footer {
 	font-size: 12px;
     }
 
-    .construction .welc {
-        font-size: 18px; /* 减小欢迎消息的文字大小 */
-        padding: 30px; /* 调整内边距 */
-    }
+    
 
 
     .content {
         padding: 20px; /* 调整内容部分的内边距 */
     }
 
-    .row {
-        margin: 10px; /* 调整行之间的间距 */
-    }
-
-    .service {
-        flex: 0 0 calc(100% - 40px); /* 让服务卡片占满屏幕宽度，调整外边距 */
-        margin: 10px 0;
+    body {
+        background-size: cover; /* Use 'cover' to fit the background image */
+        background-attachment: fixed; /* Keep background fixed */
     }
 
    footer {
