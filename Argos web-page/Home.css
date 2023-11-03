@@ -83,6 +83,7 @@ body {
       background-position: center;
       background-size: cover;
       position: relative;
+      background-attachment: fixed; /* Keep background fixed */
   }
 
 body::before {
@@ -293,10 +294,7 @@ footer {
         padding: 20px; /* 调整内容部分的内边距 */
     }
 
-    body {
-        background-size: cover; /* Use 'cover' to fit the background image */
-        background-attachment: fixed; /* Keep background fixed */
-    }
+    
 
    footer {
 	align-items: center;
