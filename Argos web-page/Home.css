@@ -319,10 +319,17 @@ footer {
         align-items: center;
         margin: 10px 0;
 	 width: 100%;
+	position: relative;
     }
+
+ .footer-widget p{
+	 white-space: nowrap;
+	 
+ }
 
 .footer-widget .socials{
 	align-items: center;
+	position: absolute;
 }
 	
 
@@ -333,6 +340,7 @@ footer {
     align-items: center;
     font-size: 20px;
     font-weight: 600;
+    position: absolute;
     }
 
     .footer-widget .logo {
