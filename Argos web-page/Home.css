@@ -12,6 +12,7 @@
 body {
     width: 100%;
     max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 
@@ -262,7 +263,13 @@ footer {
   
  /* 媒体查询，适用于小屏幕，例如手机 */
 @media screen and (max-width: 768px) {
-    #header {
+   body {
+        background-size: cover; /* Use 'cover' to fit the background image */
+        background-attachment: fixed; /* Keep background fixed */
+    }
+	
+	
+	#header {
         flex-direction: column; /* 垂直排列 */
         align-items: center;
 	text-align: center;
@@ -361,7 +368,16 @@ footer {
     }
 }
  
-  
+ /* Increase font size for heading and paragraph on mobile */
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+} 
 
 
 /*   --------------------------------------------------------End of Footer Part ----------------------------------------------------------*/
