@@ -182,10 +182,10 @@ footer {
     padding: 0 8px;
   }
   
- /* .wrapper .footer-widget:nth-child(1) {
+ .wrapper .footer-widget:nth-child(1) {
     width: calc(40% - 50px);
     margin-right: 15px;
-  }*/
+  }
   
   .wrapper .footer-widget .logo {
     margin-bottom: 30px;
