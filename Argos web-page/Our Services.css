@@ -329,6 +329,7 @@ footer {
     .container {
         flex-direction: column; /* 垂直排列内部元素 */
 	align-items: center;
+	position: relative;
     }
 
     .wrapper {
@@ -344,6 +345,7 @@ footer {
         align-items: center;
         margin: 10px 0;
 	 width: auto;
+	position: absolute;
     }
 
 .footer-widget p{
@@ -363,6 +365,7 @@ footer {
     align-items: center;
     font-size: 20px;
     font-weight: 600;
+    position: absolute;
     }
 
     .footer-widget .logo {
