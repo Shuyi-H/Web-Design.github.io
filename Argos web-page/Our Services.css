@@ -75,7 +75,7 @@ body{
   text-align: center;
   padding: 60px; 
   animation-delay: 0.5s;
-  white-space: nowrap;
+  
 }
 
 .welc{
@@ -345,7 +345,7 @@ footer {
 	 width: 100%;
     }
 
-footer-widget p{
+.footer-widget p{
 	white-space: nowrap;
 }
 
