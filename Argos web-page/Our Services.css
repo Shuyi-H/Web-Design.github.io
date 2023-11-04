@@ -303,7 +303,8 @@ footer {
     .construction .welc {
         font-size: 18px; /* 减小欢迎消息的文字大小 */
         padding: 30px; /* 调整内边距 */
-	white-space: nowrap;
+	text-align: center;
+	item-align: center;
     }
 
 
@@ -338,11 +339,11 @@ footer {
 
     .footer-widget {
 	
-        display: inline;
+        display: flex;
         text-align: center;
         align-items: center;
         margin: 10px 0;
-	 width: 100%;
+	 width: auto;
     }
 
 .footer-widget p{
