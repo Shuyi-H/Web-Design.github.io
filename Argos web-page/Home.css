@@ -104,7 +104,7 @@ body::before {
       background-position: center;
       background-size: cover;
       background-attachment: fixed; /* Keep background fixed */
-      position: absolute;
+      
   }
   
   .content h1{
