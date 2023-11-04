@@ -327,7 +327,7 @@ footer {
 
 .footer-widget .socials{
 	align-items: center;
-	position: absolute;
+	position: relative;
 }
 	
 
@@ -338,7 +338,7 @@ footer {
     align-items: center;
     font-size: 20px;
     font-weight: 600;
-    position: absolute;
+    position: relative;
     }
 
     .footer-widget .logo {
