@@ -96,7 +96,7 @@ body::before {
   .content{
       margin-top: 20px;
       
-      margin-bottom: 300px;
+      heignt: 500px;
       max-width: 650px;
       padding-top: 0;
       background-image: url("img/2.jpeg");
@@ -178,14 +178,14 @@ footer {
   
   .wrapper .footer-widget {
     width: calc(20% - 30px);
-    margin: 0 8px 30px;
+    margin: 0 8px;
     padding: 0 8px;
   }
   
-  .wrapper .footer-widget:nth-child(1) {
+ /* .wrapper .footer-widget:nth-child(1) {
     width: calc(40% - 50px);
     margin-right: 15px;
-  }
+  }*/
   
   .wrapper .footer-widget .logo {
     margin-bottom: 30px;
@@ -196,10 +196,11 @@ footer {
     margin-bottom: 30px;
     font-size: 17px;
     line-height: 24px;
+    text-align: center;
   }
   
   .wrapper .footer-widget .socials {
-    display: flex;
+    display: inline;
     align-items: center;
     justify-content: flex-start;
   }
@@ -229,7 +230,7 @@ footer {
   
   .wrapper .footer-widget h6 {
     color: #585978;
-    margin: 10px 0 35px;
+    margin: 10px 0;
     font-size: 20px;
     font-weight: 600;
   }
