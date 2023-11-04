@@ -168,7 +168,7 @@ color: #000;
 /*<!------------------------------------------------ Footer Part ------------------------------------------->*/
 
 footer {
-  position: relative;
+  
   width: 100%;
   height: auto;
   padding-top: 20px;
@@ -196,10 +196,10 @@ footer {
   padding: 0 8px;
 }
 
-.wrapper .footer-widget:nth-child(1) {
+/*.wrapper .footer-widget:nth-child(1) {
   width: calc(40% - 50px);
   margin-right: 15px;
-}
+}*/
 
 .wrapper .footer-widget .logo {
   margin-bottom: 30px;
@@ -329,7 +329,7 @@ footer {
     .container {
         flex-direction: column; /* 垂直排列内部元素 */
 	align-items: center;
-	position: relative;
+	
     }
 
     .wrapper {
