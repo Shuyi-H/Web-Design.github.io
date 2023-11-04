@@ -314,11 +314,11 @@ footer {
     }
 
     .footer-widget {
-        display: inline;
+        display: flex;
         text-align: center;
         align-items: center;
         margin: 10px 0;
-	 width: 100%;
+	 width: auto;
 	
     }
 
