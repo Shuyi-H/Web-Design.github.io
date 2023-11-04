@@ -25,7 +25,7 @@ body {
       background: #fff;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
       z-index: 999;
-      position: sticky;
+      position: relative;
       top: 0;
       left:  0;
   }
@@ -79,11 +79,7 @@ body {
       height: 800px;
       min-height: 10vh;
       
-      background-repeat: repeat-x;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-      background-attachment: fixed; /* Keep background fixed */
+      
   }
 
 body::before {
@@ -104,6 +100,11 @@ body::before {
       max-width: 650px;
       padding-top: 0;
       background-image: url("img/2.jpeg");
+      background-repeat: repeat-x;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed; /* Keep background fixed */
+      position: absolute;
   }
   
   .content h1{
@@ -153,7 +154,7 @@ body::before {
 /* --------------------------------------------------------Footer Part---------------------------------------------------------- */
 
 footer {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: auto;
     padding-top: 20px;
