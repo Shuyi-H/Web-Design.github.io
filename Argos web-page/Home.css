@@ -1,77 +1,83 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Cormorant Upright";
-}
-
-html {
+  }
+  
+  html {
     scroll-behavior: smooth;
-}
+  }
+  
+/* --------------------------------------------- Header and Nav Bar---------------------------------------------*/
+  #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 80px;
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+      z-index: 999;
+      position: sticky;
+      top: 0;
+      left:  0;
+  }
+  
+  
+  #navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  #navbar li {
+      list-style: none;
+      padding: 0 20px;
+      position: relative;
+  }
+  
+  #navbar li a {
+      text-decoration: none;
+      font-size: 26px;
+      font-weight: 600;
+      color: #1a1a1a;
+      transition: 0.3s ease;
+  }
+  
+  #navbar li a:hover,
+  #navbar li a.active {
+      color: #cfa45a;
+  }
+  
+  #navbar li a.active::after, 
+  #navbar li a:hover::after {
+      content: "";
+      width: 30%;
+      height: 2px;
+      background: #cfa45a;
+      position: absolute;
+      bottom: -3px;
+      left: 20px;
+  }
+  
+  
+  
+ /*  ------------------------------------------------Header and Nav Bar Ends --------------------------------------------*/
 
-/* --------------------------------------------- Header and Nav Bar --------------------------------------------- */
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 10%; /* 使用百分比作为内边距 */
-    background: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
 
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/*---------------------------------------------------Body With Animation Part----------------------------------------------- */
 
-#navbar li {
-    list-style: none;
-    padding: 0 2rem; /* 使用百分比作为内边距 */
-    position: relative;
-}
-
-#navbar li a {
-    text-decoration: none;
-    font-size: 2.6rem; /* 使用rem单位来设置字体大小 */
-    font-weight: 600;
-    color: #1a1a1a;
-    transition: 0.3s ease;
-}
-
-#navbar li a:hover,
-#navbar li a.active {
-    color: #cfa45a;
-}
-
-#navbar li a.active::after,
-#navbar li a:hover::after {
-    content: "";
-    width: 30%;
-    height: 2px;
-    background: #cfa45a;
-    position: absolute;
-    bottom: -3px;
-    left: 20px;
-}
-
-/* ------------------------------------------------Header and Nav Bar Ends -------------------------------------------- */
-
-/* ------------------------------------------------Body With Animation Part ----------------------------------------- */
-body {
-    width: 100%;
-    min-height: 800px;
-    min-height: 10vh;
-    background-image: url("img/2.jpeg");
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
+  body{
+      width: 100%;
+      height: 800px;
+      min-height: 10vh;
+      background-image: url("img/2.jpeg");
+      background-repeat: repeat-x;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+  }
 
 body::before {
     content: "";
@@ -81,200 +87,176 @@ body::before {
     width: 100%;
     height: 800px;
     min-height: 10vh;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px); 
+  }
+  
+  .content{
+      margin-top: 20px;
+      margin-left: 50%;
+      margin-bottom: 300px;
+      max-width: 650px;
+      padding-top: 0;
+
+  }
+  
+  .content h1{
+      font-size: 55px;
+      line-height: 60px;
+      color: #fff;
+      margin-bottom: 50px;
+  }
+  
+  .content p{
+      margin:10px 0 15px;
+      font-size: 32px;
+      color: #000;
+      font-weight: bold;
+      animation-delay: 0.5s;
+      background-color: rgb(181, 248, 214);
+  }
+  
+.content .login-btn{ 
+      padding: 7px 20px;
+      font-size: 23px;
+      animation-delay: 1s;
+      margin-bottom: auto;
+  }
+  
+  
+.anime {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.6s linear forwards;
+    color: #5c7048;
 }
 
-.content {
-    margin-top: 2rem;
-    margin-left: 5%; /* 使用百分比 */
-    margin-bottom: 20%; /* 使用百分比 */
-    max-width: 65%; /* 使用百分比 */
-    padding-top: 0;
+.anime:hover{
+  color: #1c578a;
 }
 
-.content h1 {
-    font-size: 3.4375rem; /* 使用rem单位来设置字体大小 */
-    line-height: 3.75rem; /* 使用rem单位来设置行高 */
-    color: #fff;
-    margin-bottom: 2.5rem; /* 使用rem单位来设置间距 */
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
-.content p {
-    margin: 1.25rem 0 1.875rem; /* 使用rem单位来设置间距 */
-    font-size: 2rem; /* 使用rem单位来设置字体大小 */
-    color: #000;
-    font-weight: bold;
-    animation-delay: 0.5s;
-    background-color: rgb(181, 248, 214);
-}
+/* ------------------------------------------------End of Body With Animation Part ---------------------------------------------*/
 
-.content .login-btn {
-    padding: 0.4375rem 1.25rem; /* 使用rem单位来设置内边距 */
-    font-size: 1.4375rem; /* 使用rem单位来设置字体大小 */
-    animation-delay: 1s;
-    margin-bottom: auto;
-}
+/* --------------------------------------------------------Footer Part---------------------------------------------------------- */
 
-/* 自适应图片 */
-.fluid-image {
-    max-width: 100%;
-    height: auto;
-}
-
-/* ------------------------------------------------End of Body With Animation Part ------------------------------------- */
-
-/* ------------------------------------------------Footer Part -------------------------------------------------------- */
 footer {
     position: relative;
     width: 100%;
     height: auto;
-    padding-top: 2rem; /* 使用rem单位来设置内边距 */
+    padding-top: 20px;
     background-color: #ffffff;
-}
 
-.container {
+  }
+  
+  .container {
     width: 100%;
-    max-width: 82.5rem; /* 使用rem单位来设置最大宽度 */
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0 0.9375rem; /* 使用rem单位来设置内边距 */
-}
-
-.wrapper {
+    padding: 0 12px;
+  }
+  
+  .wrapper {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.wrapper .footer-widget {
-    width: calc(20% - 1.875rem); /* 使用rem单位来设置宽度 */
-    margin: 0 1rem 3.75rem; /* 使用rem单位来设置外边距 */
-    padding: 0 1rem; /* 使用rem单位来设置内边距 */
-}
-
-.wrapper .footer-widget:nth-child(1) {
-    width: calc(40% - 2.5rem); /* 使用rem单位来设置宽度 */
-    margin-right: 1.25rem; /* 使用rem单位来设置外边距 */
-}
-
-.wrapper .footer-widget .logo {
-    margin-bottom: 3.75rem; /* 使用rem单位来设置间距 */
+  }
+  
+  .wrapper .footer-widget {
+    width: calc(20% - 30px);
+    margin: 0 8px 30px;
+    padding: 0 8px;
+  }
+  
+  .wrapper .footer-widget:nth-child(1) {
+    width: calc(40% - 50px);
+    margin-right: 15px;
+  }
+  
+  .wrapper .footer-widget .logo {
+    margin-bottom: 30px;
     vertical-align: middle;
-}
-
-.wrapper .footer-widget p {
-    margin-bottom: 3.75rem; /* 使用rem单位来设置间距 */
-    font-size: 1.0625rem; /* 使用rem单位来设置字体大小 */
-    line-height: 1.5rem;
-}
-
-.wrapper .footer-widget .socials {
+  }
+  
+  .wrapper .footer-widget p {
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  
+  .wrapper .footer-widget .socials {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
-
-.wrapper .footer-widget .socials li {
+  }
+  
+  .wrapper .footer-widget .socials li {
     list-style: none;
-}
-
-.wrapper .footer-widget .socials li a {
-    width: 1.375rem;
-    height: 1.375rem;
-    margin-right: 0.625rem;
+  }
+  
+  .wrapper .footer-widget .socials li a {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
     color: #ffffff;
     background-color: rgba(183, 153, 108, 0.642);
     border-radius: 50%;
-    font-size: 1.25rem;
+    font-size: 20px;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-out;
-}
-
-.wrapper .footer-widget .socials li a:hover {
+  }
+  
+  .wrapper .footer-widget .socials li a:hover {
     background-color: #6b34d2;
-}
-
-.wrapper .footer-widget h6 {
+  }
+  
+  .wrapper .footer-widget h6 {
     color: #585978;
-    margin: 1.25rem 0 4.375rem; /* 使用rem单位来设置间距 */
-    font-size: 1.25rem; /* 使用rem单位来设置字体大小 */
+    margin: 10px 0 35px;
+    font-size: 20px;
     font-weight: 600;
-}
-
-.wrapper .footer-widget .links li {
+  }
+  
+  .wrapper .footer-widget .links li {
     list-style: none;
-}
-
-.wrapper .footer-widget .links li a {
+  }
+  
+  .wrapper .footer-widget .links li a {
     color: #585978;
-    font-size: 1rem; /* 使用rem单位来设置字体大小 */
+    font-size: 16px;
     text-decoration: none;
     text-transform: capitalize;
-    line-height: 2rem; /* 使用rem单位来设置行高 */
+    line-height: 32px;
     transition: all 0.3s ease-out;
-}
-
-.wrapper .footer-widget .links li a:hover {
+  }
+  
+  .wrapper .footer-widget .links li a:hover {
     color: #cfa45a;
-}
-
-.copyright {
-    padding: 2rem 0; /* 使用rem单位来设置内边距 */
+  }
+  
+  .copyright {
+    padding: 20px 0;
     border-top: 1px solid rgba(88, 89, 120, 0.4);
-}
-
-.copyright p {
+  }
+  
+  .copyright p {
     color: rgba(88, 89, 120, 0.6);
-    font-size: 1.25rem; /* 使用rem单位来设置字体大小 */
+    font-size: 20px;
     font-weight: 500;
     text-align: center;
-}
+  }
+  
+  
+  
 
-/* 媒体查询，适用于小屏幕，例如手机 */
-@media screen and (max-width: 768px) {
-    #header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1rem; /* 使用rem单位来设置内边距 */
-        margin: 1rem;
-    }
 
-    #navbar {
-        flex-direction: column;
-        text-align: center;
-        padding-left: 1rem; /* 使用rem单位来设置内边距 */
-    }
-
-    #navbar li {
-        margin: 0.5rem 0.2rem; /* 使用rem单位来设置外边距 */
-        font-size: 1.2rem; /* 使用rem单位来设置字体大小 */
-    }
-
-    .content {
-        padding: 0.5rem; /* 使用rem单位来设置内边距 */
-        margin: 2rem 0;
-        max-width: 100%; /* 使用百分比 */
-        text-align: center; /* 文本居中 */
-    }
-
-    .footer-widget {
-        width: calc(50% - 1.25rem); /* 使用rem单位来设置宽度 */
-    }
-}
-
-/* 在小屏幕上增加标题和段落的字体大小 */
-@media screen and (max-width: 480px) {
-    .content h1 {
-        font-size: 2rem; /* 使用rem单位来设置字体大小 */
-        line-height: 2.2rem; /* 使用rem单位来设置行高 */
-    }
-
-    .content p {
-        font-size: 1.25rem; /* 使用rem单位来设置字体大小 */
-        line-height: 1.75rem; /* 使用rem单位来设置行高 */
-    }
-}
+/*   --------------------------------------------------------End of Footer Part ----------------------------------------------------------*/
